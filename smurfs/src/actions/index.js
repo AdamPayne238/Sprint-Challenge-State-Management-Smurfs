@@ -15,7 +15,7 @@ export const fetchSmurfs = () => dispatch => {
     .catch(error => dispatch({ type: AXIOS_FAILURE, payload: error.response}));
 };
 
-export const postSmurf = () => dispatch => {
+export const postSmurf = (smurf) => dispatch => {
     dispatch({ type: POST_SMURF });
     axios
         .post(
