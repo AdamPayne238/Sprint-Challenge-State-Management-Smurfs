@@ -3,7 +3,7 @@ import React from "react";
 //SMURF DISPLAY COMPONENT
 const Smurfs = props => {
     //CHECK AFTER RECIEVING DATA{PROPS>QUOTE>TEXT}???
-    console.log("hey", props.smurf)
+    console.log("Smurfs", props.smurf)
     return (
     <div>
         <h1>Smurf Display Component</h1>
