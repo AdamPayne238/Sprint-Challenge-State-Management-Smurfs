@@ -8,9 +8,9 @@ const Smurfs = props => {
     <div>
         <h1>Smurf Display Component</h1>
         <h1>{props.smurf.name}</h1>
-        <h2>{props.smurf.age}</h2>
-        <h2>{props.smurf.height}</h2>
-        <h2>{props.smurf.id}</h2>
+        <h2>Age: {props.smurf.age}</h2>
+        <h2>Height: {props.smurf.height}</h2>
+        <h2>ID: {props.smurf.id}</h2>
         
     </div>
     );

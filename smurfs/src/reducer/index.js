@@ -1,4 +1,4 @@
-import { START_AXIOS, AXIOS_SUCCESS, AXIOS_FAILURE } from "../actions";
+import { START_AXIOS, AXIOS_SUCCESS, AXIOS_FAILURE, POST_SMURF } from "../actions";
 
 const initialState = {
     smurfData: [],
@@ -26,6 +26,10 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 error: action.payload,
                 isFetching: false
+            };
+        case POST_SMURF:
+            return{
+                ...state
             };
         default:
             return state;
